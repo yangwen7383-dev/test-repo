@@ -1,18 +1,17 @@
 #include <Arduino.h>
+#include <VescUart.h>
 
-// put function declarations here:
-int myFunction(int, int);
+VescUart VescMotor;
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+  VescMotor.setSerialPort(&Serial);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  VescMotor.setDuty(0.3); // Set the duty cycle to 30%
+  delay(1000); // Wait for 1 second
+  VescMotor.setDuty(0.0); // Set the duty cycle to 0%
 }
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
+//blablabla
