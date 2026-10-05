@@ -11,7 +11,9 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   VescMotor.setDuty(0.3); // Set the duty cycle to 30%
-  delay(1000); // Wait for 1 second
+  delay (1000); // Wait for 1 second
   VescMotor.setDuty(0.0); // Set the duty cycle to 0%
+  VescMotor.setCurrent(10.0); // Set the current to 10A// will delete soon
+  delay (1000); // Wait for 1 second // will delete soon
 }
 //blablabla
