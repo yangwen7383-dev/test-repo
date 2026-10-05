@@ -14,6 +14,5 @@ void loop() {
   delay(1000); // Wait for 1 second
   VescMotor.setDuty(0.0); // Set the duty cycle to 0%
   delay(1000); // Wait for 1 second
-  delay(1000); // Wait for 1 second
 }
 //blablabla
